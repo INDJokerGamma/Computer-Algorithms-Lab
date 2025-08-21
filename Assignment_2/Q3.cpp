@@ -1,5 +1,6 @@
- 
- 
+
+//  Q.3 Implement and Explain Tower of Hanoi algorithm.
+
 #include <bits/stdc++.h>
 using namespace std;
 
