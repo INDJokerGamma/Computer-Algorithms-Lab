@@ -38,6 +38,7 @@ void tileBoard(vector<vector<int>>& board, int n, int topRow, int topCol, int mi
     if (quad != 2) board[topRow + mid][topCol + mid - 1] = t;
     if (quad != 3) board[topRow + mid][topCol + mid] = t;
 
+    
     // Recurse for each quadrant
     // Top-left
     tileBoard(board, mid, topRow, topCol,
@@ -58,6 +59,7 @@ void tileBoard(vector<vector<int>>& board, int n, int topRow, int topCol, int mi
     tileBoard(board, mid, topRow + mid, topCol + mid,
               (quad == 3 ? missingRow : topRow + mid),
               (quad == 3 ? missingCol : topCol + mid));
+
 }
 
 int main() {

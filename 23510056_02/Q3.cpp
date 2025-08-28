@@ -14,7 +14,7 @@ void TowerofHanoi(int n, char s_rod, char d_rod, char a_rod )
     
     TowerofHanoi (n-1, s_rod, a_rod, d_rod);
 
-    cout<<"Move disk "<< n << " from rod " << s_rod << " to "  << d_rod <<endl;
+    cout<<"Move Disk "<< n << " from rod " << s_rod << " to "  << d_rod <<endl;
     cout<<endl;
 
     TowerofHanoi (n-1, a_rod, d_rod, s_rod);
